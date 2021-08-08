@@ -1,0 +1,19 @@
+.game{
+    border: solid, 5px, white;
+    width: 300px;
+    height: 300px;
+    border: chartreuse, solid, 10px;
+    display: flexbox;
+    justify-content: center;
+}
+.boxes{
+    display: flexbox;
+    justify-self: end;
+    height: 10%;
+    width: 10%;
+    background-color: brown;
+}
+body{
+    height: max-content;
+    background-color: aqua;
+}
