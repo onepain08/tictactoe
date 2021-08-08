@@ -14,20 +14,24 @@
 <body>
     
     <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-        <?php $board = new Board(9); ?>
+        <?php $board = new Board(9, 0); ?>
         
     </form>
+    <div class="data">
     <?php 
 
-        
+        if(isset($_POST["box1"])){
+            $_POST["box1"] = "X";
+            echo $_POST["box1"];
+        }
         
         echo $board->getValue();
         
-        var_dump($board);
+        
         
     
     ?>
-
+    </div>
 
    
 
